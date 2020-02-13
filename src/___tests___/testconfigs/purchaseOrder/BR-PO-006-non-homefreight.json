@@ -1,0 +1,23 @@
+{
+    "input": {
+        "RecommendedSolution" : "",
+        "PONumber" : "DOES_NOT_EXIST",
+        "PurchaseOrders" : [{
+            "RecordID": "DOES_NOT_EXIST",
+            "PONumber": "DOES_NOT_EXIST",
+            "Description": "DESCRIPTION",
+            "IFCDC": "IFCDC",
+            "RDC": "RDCVALUE",
+            "SKU": "SKU",
+            "SKUGTIN": "SKUGTIN",
+            "Quantity": 1,
+            "UnitPrice": 1.99,
+            "VendorID": "VENDORID",
+            "CreatedDateTime": 0
+        }],
+        "PurchaseOrderDiscrepancies" : []
+    },
+    "output": {},
+    "existingAPs": [],
+    "existingUOMs": []
+}

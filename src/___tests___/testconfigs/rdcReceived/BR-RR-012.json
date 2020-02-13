@@ -1,0 +1,129 @@
+{
+    "input": {        
+        "RecommendedSolution" : "",
+        "PONumber" : "PACK_SIZE_DISCREPANCY_SHORTAGE",
+        "RDCReceiveds": [
+            {                
+                "RecordID": "PACK_SIZE_DISCREPANCY_SHORTAGE",
+                "PONumber": "PACK_SIZE_DISCREPANCY_SHORTAGE", 
+                "CreatedDateTime": 0,
+                "KeyRecNumber": "KEYRECNUMBER",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_3",
+                "Quantity": 5,
+                "UnitCost": 1.21
+            }
+        ]
+    },
+    "output": {
+        "PONumber" : "PACK_SIZE_DISCREPANCY_SHORTAGE",
+        "RecommendedSolution" : "Pack size discrepancy",
+        "PurchaseOrders" : [            
+            {
+                "RecordID": "PACK_SIZE_DISCREPANCY_SHORTAGE",
+                "PONumber": "PACK_SIZE_DISCREPANCY_SHORTAGE",
+                "Description": "hammers",
+                "IFCDC": "IFCDC",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_3",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 6,
+                "UnitPrice": 2.12,
+                "VendorID": "VENDORID",
+                "CreatedDateTime": 0
+            }
+        ],
+        "VendorShippeds" : [
+            {
+                "RecordID": "PACK_SIZE_DISCREPANCY_SHORTAGE",
+                "PONumber": "PACK_SIZE_DISCREPANCY_SHORTAGE",            
+                "UCC128" : "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_3",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 6,
+                "ASNNumber" : "ASNNUMBER",
+                "ASNShipmentID" : "ASNSHIPMENTID",
+                "CreatedDateTime" : 0,
+                "POLineItem" : 1
+            }
+        ],     
+        "IFCReceiveds" : [          
+            {
+                "RecordID": "PACK_SIZE_DISCREPANCY_SHORTAGE",
+                "PONumber": "PACK_SIZE_DISCREPANCY_SHORTAGE",     
+                "CheckinDateTime": 0,
+                "ReceivedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_3",
+                "SKUGTIN":  "SKUGTIN",
+                "OrderQuantity": 6,
+                "ShippedQuantity": 6,
+                "ReceivedQuantity": 6,
+                "VendorID": "VENDORID",              
+                "Description": "DESCRIPTION"
+            }
+        ],
+        "IFCStageds": [                     
+            {
+                "RecordID": "PACK_SIZE_DISCREPANCY_SHORTAGE",
+                "PONumber": "PACK_SIZE_DISCREPANCY_SHORTAGE",  
+                "CreatedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_3",
+                "Quantity": 6,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION"
+            }
+        ],
+        "IFCShippeds" : [                           
+            {
+                "RecordID": "PACK_SIZE_DISCREPANCY_SHORTAGE",
+                "PONumber": "PACK_SIZE_DISCREPANCY_SHORTAGE", 
+                "CreatedDateTime": 0,
+                "ShippedDateTime": 0,
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_3",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 6,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION",
+                "TCASNID": "TCASNID",
+                "BOLNumber": "BOLNUMBER",
+                "PRONumber": "PRONUMBER",
+                "Carrier": "CARRIER"
+            }
+        ],
+        "RDCReceiveds": [
+            {                
+                "RecordID": "PACK_SIZE_DISCREPANCY_SHORTAGE",
+                "PONumber": "PACK_SIZE_DISCREPANCY_SHORTAGE", 
+                "CreatedDateTime": 0,
+                "KeyRecNumber": "KEYRECNUMBER",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_3",
+                "Quantity": 5,
+                "UnitCost": 1.21
+            }
+        ],
+        "RDCReceivedDiscrepancies" : [            
+            {
+                "DiscrepancyID": "PACK_SIZE_DISCREPANCY_SHORTAGE-Shortage-RDCReceived-PACK_SIZE_DISCREPANCY_SHORTAGE-SKU_3",
+                "DiscrepancyType": "Shortage",
+                "StageType": "RDCReceived",
+                "RecordID": "PACK_SIZE_DISCREPANCY_SHORTAGE",
+                "ItemID": "SKU_3",
+                "ExpectedQuantity": 6,
+                "ObservedQuantity": 5,
+                "PONumber": "PACK_SIZE_DISCREPANCY_SHORTAGE"
+            }
+        ],
+        "PurchaseOrderDiscrepancies": [],
+        "VendorShippedDiscrepancies": [],
+        "IFCReceivedDiscrepancies": [],
+        "IFCStagedDiscrepancies" : [],
+        "IFCShippedDiscrepancies" : []
+    }
+}

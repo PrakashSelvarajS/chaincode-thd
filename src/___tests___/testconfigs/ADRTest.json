@@ -1,0 +1,89 @@
+[
+    {
+        "RuleID" : "BR-ADR-001",
+        "Description" : "BR-ADR-001 : PO data is missing",
+        "Solution" : "Don't Pay",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "PurchaseOrderQuantityMatched",
+                "MinimumValue" : 0,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 0,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    },
+    {
+        "RuleID" : "BR-ADR-002",
+        "Description" : "BR-ADR-002 : Vendor Shipped data is missing",
+        "Solution" : "Don't Pay",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "PurchaseOrderQuantityMatched",
+                "MinimumValue" : 0,  
+                "MinimumComparisonType" : ">",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "<=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "VendorShippedQuantityMatched",
+                "MinimumValue" : 0,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 0,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    },
+    {
+        "RuleID" : "BR-ADR-003",
+        "Description" : "BR-ADR-003 : IFC-In data is missing",
+        "Solution" : "Don't Pay",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "PurchaseOrderQuantityMatched",
+                "MinimumValue" : 0,  
+                "MinimumComparisonType" : ">",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "<=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "VendorShippedQuantityMatched",
+                "MinimumValue" : 0,  
+                "MinimumComparisonType" : ">",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "<=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCReceivedQuantityMatched",
+                "MinimumValue" : 0,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 0,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    }
+]

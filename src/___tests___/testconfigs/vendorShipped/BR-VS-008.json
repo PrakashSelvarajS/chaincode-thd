@@ -1,0 +1,94 @@
+{
+    "input": {
+        "RecommendedSolution": "",
+        "PONumber": "VS_DOES_EXIST",
+        "VendorShippeds": [
+            {
+                "RecordID": "NEW_RECORDID",
+                "PONumber": "VS_DOES_EXIST",
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "ASNNumber": "ASNNUMBER",
+                "ASNShipmentID": "ASNSHIPMENTID",
+                "CreatedDateTime": 1,
+                "POLineItem": 2
+            },
+            {
+                "RecordID": "NEW_RECORDID_BLANK_SKU_AT_VENDOR_SHIPPED",
+                "PONumber": "VS_DOES_EXIST",
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "",
+                "SKUGTIN": "",
+                "Quantity": 1,
+                "ASNNumber": "ASNNUMBER",
+                "ASNShipmentID": "ASNSHIPMENTID",
+                "CreatedDateTime": 1,
+                "POLineItem": 2
+            }
+        ]
+    },
+    "output": {
+        "RecommendedSolution": "Further Analysis Required",
+        "PONumber": "VS_DOES_EXIST",
+        "PurchaseOrders": [
+            {
+                "RecordID": "VS_DOES_EXIST_DEFAULT",
+                "PONumber": "VS_DOES_EXIST",
+                "Description": "hammers",
+                "IFCDC": "IFCDC",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "UnitPrice": 2.12,
+                "VendorID": "VENDORID",
+                "CreatedDateTime": 0
+            }
+        ],
+        "VendorShippeds": [
+            {
+                "RecordID": "NEW_RECORDID",
+                "PONumber": "VS_DOES_EXIST",
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "ASNNumber": "ASNNUMBER",
+                "ASNShipmentID": "ASNSHIPMENTID",
+                "CreatedDateTime": 1,
+                "POLineItem": 2
+            },
+            {
+                "RecordID": "NEW_RECORDID_BLANK_SKU_AT_VENDOR_SHIPPED",
+                "PONumber": "VS_DOES_EXIST",
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "",
+                "SKUGTIN": "",
+                "Quantity": 1,
+                "ASNNumber": "ASNNUMBER",
+                "ASNShipmentID": "ASNSHIPMENTID",
+                "CreatedDateTime": 1,
+                "POLineItem": 2
+            }
+        ],
+        "VendorShippedDiscrepancies": [
+            {
+                "DiscrepancyID": "VS_DOES_EXIST-BlankSKUAtVendorShipped-VendorShipped-NEW_RECORDID_BLANK_SKU_AT_VENDOR_SHIPPED-",
+                "DiscrepancyType": "BlankSKUAtVendorShipped",
+                "StageType": "VendorShipped",
+                "RecordID": "NEW_RECORDID_BLANK_SKU_AT_VENDOR_SHIPPED",
+                "ItemID": "",
+                "ExpectedQuantity": 0,
+                "ObservedQuantity": 1,
+                "PONumber": "VS_DOES_EXIST"
+            }
+        ],
+        "PurchaseOrderDiscrepancies": []
+    }
+}

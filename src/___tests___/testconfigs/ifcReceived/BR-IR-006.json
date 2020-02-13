@@ -1,0 +1,54 @@
+{
+    "input": {        
+        "RecommendedSolution" : "",
+        "PONumber" : "DOES_NOT_EXIST",
+        "IFCReceiveds": [           
+            {
+                "RecordID": "DOES_NOT_EXIST",
+                "PONumber": "DOES_NOT_EXIST",     
+                "CheckinDateTime": 0,
+                "ReceivedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN":  "SKUGTIN",
+                "OrderQuantity": 1,
+                "ShippedQuantity": 1,
+                "ReceivedQuantity": 1,
+                "VendorID": "VENDORID",              
+                "Description": "DESCRIPTION"
+            }
+        ]      
+    },
+    "output": {        
+        "RecommendedSolution" : "Further Analysis Required",
+        "PONumber" : "DOES_NOT_EXIST",
+        "IFCReceiveds": [           
+            {
+                "RecordID": "DOES_NOT_EXIST",
+                "PONumber": "DOES_NOT_EXIST",     
+                "CheckinDateTime": 0,
+                "ReceivedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN":  "SKUGTIN",
+                "OrderQuantity": 1,
+                "ShippedQuantity": 1,
+                "ReceivedQuantity": 1,
+                "VendorID": "VENDORID",              
+                "Description": "DESCRIPTION"
+            }
+        ],
+        "PurchaseOrderDiscrepancies": [{
+            "DiscrepancyID":"DOES_NOT_EXIST-MissingPO-PurchaseOrdered--DOES_NOT_EXIST",
+            "DiscrepancyType":"MissingPO",
+            "StageType":"PurchaseOrdered",
+            "RecordID":"",
+            "ItemID":"DOES_NOT_EXIST",
+            "ExpectedQuantity":1,
+            "ObservedQuantity":0,
+            "PONumber":"DOES_NOT_EXIST"
+        }]
+    }
+}

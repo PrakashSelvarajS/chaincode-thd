@@ -1,0 +1,129 @@
+{
+    "input": {        
+        "RecommendedSolution" : "",
+        "PONumber" : "RR_DOES_EXIST_PARTIAL",
+        "RDCReceiveds": [
+            {                
+                "RecordID": "RR_DOES_EXIST_PARTIAL",
+                "PONumber": "RR_DOES_EXIST_PARTIAL", 
+                "CreatedDateTime": 0,
+                "KeyRecNumber": "KEYRECNUMBER",
+                "RDC": "RDC_1",
+                "SKU": "SKU",
+                "Quantity": 1,
+                "UnitCost": 1.21
+            }
+        ]  
+    },
+    "output": {
+        "PONumber" : "RR_DOES_EXIST_PARTIAL",
+        "RecommendedSolution" : "Pay In Full",
+        "PurchaseOrders" : [            
+            {
+                "RecordID": "RR_DOES_EXIST_PARTIAL",
+                "PONumber": "RR_DOES_EXIST_PARTIAL",
+                "Description": "hammers",
+                "IFCDC": "IFCDC",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "UnitPrice": 2.12,
+                "VendorID": "VENDORID",
+                "CreatedDateTime": 0
+            }
+        ],
+        "VendorShippeds" : [
+            {
+                "RecordID": "RR_DOES_EXIST_PARTIAL",
+                "PONumber": "RR_DOES_EXIST_PARTIAL",            
+                "UCC128" : "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "ASNNumber" : "ASNNUMBER",
+                "ASNShipmentID" : "ASNSHIPMENTID",
+                "CreatedDateTime" : 0,
+                "POLineItem" : 1
+            }
+        ],     
+        "IFCReceiveds" : [          
+            {
+                "RecordID": "RR_DOES_EXIST_PARTIAL",
+                "PONumber": "RR_DOES_EXIST_PARTIAL",     
+                "CheckinDateTime": 0,
+                "ReceivedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN":  "SKUGTIN",
+                "OrderQuantity": 1,
+                "ShippedQuantity": 1,
+                "ReceivedQuantity": 1,
+                "VendorID": "VENDORID",              
+                "Description": "DESCRIPTION"
+            }
+        ],
+        "IFCStageds": [                     
+            {
+                "RecordID": "RR_DOES_EXIST_PARTIAL",
+                "PONumber": "RR_DOES_EXIST_PARTIAL",  
+                "CreatedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "Quantity": 1,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION"
+            }
+        ],
+        "IFCShippeds" : [                           
+            {
+                "RecordID": "RR_DOES_EXIST_PARTIAL",
+                "PONumber": "RR_DOES_EXIST_PARTIAL", 
+                "CreatedDateTime": 0,
+                "ShippedDateTime": 0,
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION",
+                "TCASNID": "TCASNID",
+                "BOLNumber": "BOLNUMBER",
+                "PRONumber": "PRONUMBER",
+                "Carrier": "CARRIER"
+            }
+        ],
+        "RDCReceiveds": [
+            {                
+                "RecordID": "RR_DOES_EXIST_PARTIAL",
+                "PONumber": "RR_DOES_EXIST_PARTIAL", 
+                "CreatedDateTime": 0,
+                "KeyRecNumber": "KEYRECNUMBER",
+                "RDC": "RDC_1",
+                "SKU": "SKU",
+                "Quantity": 1,
+                "UnitCost": 1.21
+            }
+        ],
+        "RDCReceivedDiscrepancies" : [ 
+            {
+                "DiscrepancyID": "RR_DOES_EXIST_PARTIAL-WrongRDC-RDCReceived-RR_DOES_EXIST_PARTIAL-RDC_1",
+                "DiscrepancyType": "WrongRDC",
+                "StageType": "RDCReceived",
+                "RecordID": "RR_DOES_EXIST_PARTIAL",
+                "ItemID": "RDC_1",
+                "ExpectedQuantity": 0,
+                "ObservedQuantity": 0,
+                "PONumber": "RR_DOES_EXIST_PARTIAL"
+            }
+        ],
+        "PurchaseOrderDiscrepancies": [],
+        "VendorShippedDiscrepancies": [],
+        "IFCReceivedDiscrepancies" : [],
+        "IFCStagedDiscrepancies" : [],
+        "IFCShippedDiscrepancies" : []
+    }
+}

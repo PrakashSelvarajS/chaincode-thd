@@ -1,0 +1,15 @@
+{
+  "BoschMSP": {
+    "chaincode": [
+      {
+        "name": "p2pay",
+        "path": "./",
+        "channels": [
+          "supplychain"
+        ],
+        "instantiate": false,
+        "install": true
+      }
+    ]
+  }
+}

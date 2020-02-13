@@ -1,0 +1,435 @@
+{
+    "input": {        
+        "RecommendedSolution" : "",
+        "PONumber" : "INV_DOES_EXIST", 
+        "Invoices": [          
+            {                
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST",   
+                "InvoiceNumber": "INV_2",
+                "InvoiceDate": 0,
+                "PVendorID": "PVENDORID",
+                "MVendorID": "MVENDORID",
+                "RDC": "RDCVALUE",
+                "MerDeptNumber": "NEW_MER_DEPT_NUMBER",
+                "SKU": "SKU_1",
+                "InvoiceQuantity": 10,
+                "UnitCostAmount": 1.55,
+                "TotalCostAmount": 1.55
+            }
+        ]
+    },
+    "output": {        
+        "RecommendedSolution" : "Further Analysis Required",
+        "PONumber" : "INV_DOES_EXIST",
+        "PurchaseOrders" : [   
+            {
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST",
+                "Description": "hammers",
+                "IFCDC": "IFCDC",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "UnitPrice": 2.12,
+                "VendorID": "VENDORID",
+                "CreatedDateTime": 0
+            },
+            {
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST",
+                "Description": "drills",
+                "IFCDC": "IFCDC",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_1",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "UnitPrice": 2.12,
+                "VendorID": "VENDORID",
+                "CreatedDateTime": 0
+            }
+        ],
+        "VendorShippeds" : [            
+            {
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST",            
+                "UCC128" : "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "ASNNumber" : "ASNNUMBER",
+                "ASNShipmentID" : "ASNSHIPMENTID",
+                "CreatedDateTime" : 0,
+                "POLineItem" : 1
+            },
+            {
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST",            
+                "UCC128" : "UCC128_2",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_1",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "ASNNumber" : "ASNNUMBER",
+                "ASNShipmentID" : "ASNSHIPMENTID",
+                "CreatedDateTime" : 0,
+                "POLineItem" : 1
+            }
+        ],
+        "IFCReceiveds": [           
+            {
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST",     
+                "CheckinDateTime": 0,
+                "ReceivedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN":  "SKUGTIN",
+                "OrderQuantity": 1,
+                "ShippedQuantity": 1,
+                "ReceivedQuantity": 1,
+                "VendorID": "VENDORID",              
+                "Description": "DESCRIPTION"
+            },           
+            {
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST",     
+                "CheckinDateTime": 0,
+                "ReceivedDateTime": 0,
+                "UCC128": "UCC128_2",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_1",
+                "SKUGTIN":  "SKUGTIN",
+                "OrderQuantity": 1,
+                "ShippedQuantity": 1,
+                "ReceivedQuantity": 1,
+                "VendorID": "VENDORID",              
+                "Description": "NEW_DESCRIPTION"
+            }
+        ],
+        "IFCStageds": [           
+            {
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST",  
+                "CreatedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "Quantity": 1,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION"
+            },         
+            {
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST",  
+                "CreatedDateTime": 0,
+                "UCC128": "UCC128_2",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_1",
+                "Quantity": 1,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION"
+            }
+        ], 
+        "IFCShippeds" : [                                        
+            {
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST", 
+                "CreatedDateTime": 0,
+                "ShippedDateTime": 0,
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION",
+                "TCASNID": "TCASNID",
+                "BOLNumber": "BOLNUMBER",
+                "PRONumber": "PRONUMBER",
+                "Carrier": "CARRIER"
+            },                         
+            {
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST", 
+                "CreatedDateTime": 0,
+                "ShippedDateTime": 0,
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_1",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION",
+                "TCASNID": "TCASNID",
+                "BOLNumber": "BOLNUMBER",
+                "PRONumber": "PRONUMBER",
+                "Carrier": "CARRIER"
+            }
+        ],
+        "RDCReceiveds": [
+            {                
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST", 
+                "CreatedDateTime": 0,
+                "KeyRecNumber": "KEYRECNUMBER",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "Quantity": 1,
+                "UnitCost": 1.21
+            },
+            {                
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST", 
+                "CreatedDateTime": 0,
+                "KeyRecNumber": "KEYRECNUMBER",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU_1",
+                "Quantity": 1,
+                "UnitCost": 1.21
+            }
+        ],
+        "Invoices" : [                 
+            {                
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST",   
+                "InvoiceNumber": "INV_1",
+                "InvoiceDate": 0,
+                "PVendorID": "PVENDORID",
+                "MVendorID": "MVENDORID",
+                "RDC": "RDCVALUE",
+                "MerDeptNumber": "MER_DEPT_NUMBER",
+                "SKU": "SKU",
+                "InvoiceQuantity": 1,
+                "UnitCostAmount": 1.21,
+                "TotalCostAmount": 1.21
+            },           
+            {                
+                "RecordID": "INV_DOES_EXIST",
+                "PONumber": "INV_DOES_EXIST",   
+                "InvoiceNumber": "INV_2",
+                "InvoiceDate": 0,
+                "PVendorID": "PVENDORID",
+                "MVendorID": "MVENDORID",
+                "RDC": "RDCVALUE",
+                "MerDeptNumber": "NEW_MER_DEPT_NUMBER",
+                "SKU": "SKU_1",
+                "InvoiceQuantity": 10,
+                "UnitCostAmount": 1.55,
+                "TotalCostAmount": 1.55
+            }
+        ],
+        "PurchaseOrderDiscrepancies": [],
+        "VendorShippedDiscrepancies": [],
+        "IFCReceivedDiscrepancies": [],
+        "IFCStagedDiscrepancies": [],
+        "IFCShippedDiscrepancies": [],
+        "RDCReceivedDiscrepancies": [],
+        "InvoiceDiscrepancies": []
+    },
+    "existingAPs": [        
+        {
+            "PONumber" : "INV_DOES_EXIST",
+            "RecommendedSolution" : "Further Analysis Required",
+            "PurchaseOrders" : [            
+                {
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST",
+                    "Description": "hammers",
+                    "IFCDC": "IFCDC",
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU",
+                    "SKUGTIN": "SKUGTIN",
+                    "Quantity": 1,
+                    "UnitPrice": 2.12,
+                    "VendorID": "VENDORID",
+                    "CreatedDateTime": 0
+                },
+                {
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST",
+                    "Description": "drills",
+                    "IFCDC": "IFCDC",
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU_1",
+                    "SKUGTIN": "SKUGTIN",
+                    "Quantity": 1,
+                    "UnitPrice": 2.12,
+                    "VendorID": "VENDORID",
+                    "CreatedDateTime": 0
+                }
+            ],
+            "VendorShippeds" : [
+                {
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST",            
+                    "UCC128" : "UCC128",
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU",
+                    "SKUGTIN": "SKUGTIN",
+                    "Quantity": 1,
+                    "ASNNumber" : "ASNNUMBER",
+                    "ASNShipmentID" : "ASNSHIPMENTID",
+                    "CreatedDateTime" : 0,
+                    "POLineItem" : 1
+                },
+                {
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST",            
+                    "UCC128" : "UCC128_2",
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU_1",
+                    "SKUGTIN": "SKUGTIN",
+                    "Quantity": 1,
+                    "ASNNumber" : "ASNNUMBER",
+                    "ASNShipmentID" : "ASNSHIPMENTID",
+                    "CreatedDateTime" : 0,
+                    "POLineItem" : 1
+                }
+            ],
+            "IFCReceiveds": [           
+                {
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST",     
+                    "CheckinDateTime": 0,
+                    "ReceivedDateTime": 0,
+                    "UCC128": "UCC128",
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU",
+                    "SKUGTIN":  "SKUGTIN",
+                    "OrderQuantity": 1,
+                    "ShippedQuantity": 1,
+                    "ReceivedQuantity": 1,
+                    "VendorID": "VENDORID",              
+                    "Description": "DESCRIPTION"
+                },            
+                {
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST",     
+                    "CheckinDateTime": 0,
+                    "ReceivedDateTime": 0,
+                    "UCC128": "UCC128_2",
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU_1",
+                    "SKUGTIN":  "SKUGTIN",
+                    "OrderQuantity": 1,
+                    "ShippedQuantity": 1,
+                    "ReceivedQuantity": 1,
+                    "VendorID": "VENDORID",              
+                    "Description": "NEW_DESCRIPTION"
+                }
+            ],
+            "IFCStageds": [           
+                {
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST",  
+                    "CreatedDateTime": 0,
+                    "UCC128": "UCC128",
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU",
+                    "Quantity": 1,
+                    "VendorID": "VENDORID",
+                    "Description": "DESCRIPTION"
+                },         
+                {
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST",  
+                    "CreatedDateTime": 0,
+                    "UCC128": "UCC128_2",
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU_1",
+                    "Quantity": 1,
+                    "VendorID": "VENDORID",
+                    "Description": "DESCRIPTION"
+                }
+            ],
+            "IFCShippeds" : [                           
+                {
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST", 
+                    "CreatedDateTime": 0,
+                    "ShippedDateTime": 0,
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU",
+                    "SKUGTIN": "SKUGTIN",
+                    "Quantity": 1,
+                    "VendorID": "VENDORID",
+                    "Description": "DESCRIPTION",
+                    "TCASNID": "TCASNID",
+                    "BOLNumber": "BOLNUMBER",
+                    "PRONumber": "PRONUMBER",
+                    "Carrier": "CARRIER"
+                },                       
+                {
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST", 
+                    "CreatedDateTime": 0,
+                    "ShippedDateTime": 0,
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU_1",
+                    "SKUGTIN": "SKUGTIN",
+                    "Quantity": 1,
+                    "VendorID": "VENDORID",
+                    "Description": "DESCRIPTION",
+                    "TCASNID": "TCASNID",
+                    "BOLNumber": "BOLNUMBER",
+                    "PRONumber": "PRONUMBER",
+                    "Carrier": "CARRIER"
+                }
+            ],
+            "RDCReceiveds": [
+                {                
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST", 
+                    "CreatedDateTime": 0,
+                    "KeyRecNumber": "KEYRECNUMBER",
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU",
+                    "Quantity": 1,
+                    "UnitCost": 1.21
+                },
+                {                
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST", 
+                    "CreatedDateTime": 0,
+                    "KeyRecNumber": "KEYRECNUMBER",
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU_1",
+                    "Quantity": 1,
+                    "UnitCost": 1.21
+                }
+            ],
+            "Invoices" : [                 
+                {                
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST",   
+                    "InvoiceNumber": "INV_1",
+                    "InvoiceDate": 0,
+                    "PVendorID": "PVENDORID",
+                    "MVendorID": "MVENDORID",
+                    "RDC": "RDCVALUE",
+                    "MerDeptNumber": "MER_DEPT_NUMBER",
+                    "SKU": "SKU",
+                    "InvoiceQuantity": 1,
+                    "UnitCostAmount": 1.21,
+                    "TotalCostAmount": 1.21
+                },           
+                {                
+                    "RecordID": "INV_DOES_EXIST",
+                    "PONumber": "INV_DOES_EXIST",   
+                    "InvoiceNumber": "INV_2",
+                    "InvoiceDate": 0,
+                    "PVendorID": "PVENDORID",
+                    "MVendorID": "MVENDORID",
+                    "RDC": "RDCVALUE",
+                    "MerDeptNumber": "MER_DEPT_NUMBER",
+                    "SKU": "SKU_1",
+                    "InvoiceQuantity": 1,
+                    "UnitCostAmount": 1.21,
+                    "TotalCostAmount": 1.21
+                }
+            ]
+        }
+    ]
+}

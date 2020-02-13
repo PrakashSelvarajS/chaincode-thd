@@ -1,0 +1,98 @@
+{
+    "input": {        
+        "RecommendedSolution" : "",
+        "PONumber" : "IST_DOES_EXIST_PARTIAL",
+        "IFCStageds": [                     
+            {
+                "RecordID": "IST_DOES_EXIST_PARTIAL",
+                "PONumber": "IST_DOES_EXIST_PARTIAL",  
+                "CreatedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDC_1",
+                "SKU": "SKU",
+                "Quantity": 1,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION"
+            }
+        ]
+    },
+    "output": {
+        "PONumber" : "IST_DOES_EXIST_PARTIAL",
+        "RecommendedSolution" : "Further Analysis Required",
+        "PurchaseOrders" : [            
+            {
+                "RecordID": "IST_DOES_EXIST_PARTIAL",
+                "PONumber": "IST_DOES_EXIST_PARTIAL",
+                "Description": "hammers",
+                "IFCDC": "IFCDC",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "UnitPrice": 2.12,
+                "VendorID": "VENDORID",
+                "CreatedDateTime": 0
+            }
+        ],
+        "VendorShippeds" : [
+            {
+                "RecordID": "IST_DOES_EXIST_PARTIAL",
+                "PONumber": "IST_DOES_EXIST_PARTIAL",            
+                "UCC128" : "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "ASNNumber" : "ASNNUMBER",
+                "ASNShipmentID" : "ASNSHIPMENTID",
+                "CreatedDateTime" : 0,
+                "POLineItem" : 1
+            }
+        ],     
+        "IFCReceiveds" : [          
+            {
+                "RecordID": "IST_DOES_EXIST_PARTIAL",
+                "PONumber": "IST_DOES_EXIST_PARTIAL",     
+                "CheckinDateTime": 0,
+                "ReceivedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN":  "SKUGTIN",
+                "OrderQuantity": 1,
+                "ShippedQuantity": 1,
+                "ReceivedQuantity": 1,
+                "VendorID": "VENDORID",              
+                "Description": "DESCRIPTION"
+            }
+        ],
+        "IFCStageds": [                     
+            {
+                "RecordID": "IST_DOES_EXIST_PARTIAL",
+                "PONumber": "IST_DOES_EXIST_PARTIAL",  
+                "CreatedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDC_1",
+                "SKU": "SKU",
+                "Quantity": 1,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION"
+            }
+        ],
+        "IFCStagedDiscrepancies" : [ 
+            {
+                "DiscrepancyID": "IST_DOES_EXIST_PARTIAL-WrongRDC-IFCStaged-IST_DOES_EXIST_PARTIAL-RDC_1",
+                "DiscrepancyType": "WrongRDC",
+                "StageType": "IFCStaged",
+                "RecordID": "IST_DOES_EXIST_PARTIAL",
+                "ItemID": "RDC_1",
+                "ExpectedQuantity": 0,
+                "ObservedQuantity": 0,
+                "PONumber": "IST_DOES_EXIST_PARTIAL"
+            }
+        ],
+        "PurchaseOrderDiscrepancies": [],
+        "VendorShippedDiscrepancies": [],
+        "IFCReceivedDiscrepancies" : []
+    }
+}

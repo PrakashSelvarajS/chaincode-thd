@@ -1,0 +1,403 @@
+[
+    {
+        "RuleID" : "BR-ADR-004",
+        "Description" : "BR-ADR-004 : IFCIN, IFCOUT, RDCReceived == ASN",
+        "Solution" : "Pay In Full",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCShippedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "RDCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    },
+    {
+        "RuleID" : "BR-ADR-005",
+        "Description" : "BR-ADR-005 : IFCIN & RDCReceived == ASN, IFCOUT != ASN",
+        "Solution" : "Pay In Full",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCShippedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "!=",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "!=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "RDCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    },
+    {
+        "RuleID" : "BR-ADR-006",
+        "Description" : "BR-ADR-006 : IFCOUT & RDCReceived == ASN, IFCIN != ASN",
+        "Solution" : "Pay In Full",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "!=",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "!=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCShippedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "RDCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    },
+    {
+        "RuleID" : "BR-ADR-007",
+        "Description" : "BR-ADR-007 : RDCReceived == ASN, IFCIN & IFCOUT != ASN",
+        "Solution" : "Pay In Full",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "!=",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "!=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCShippedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "!=",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "!=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "RDCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    },
+    {
+        "RuleID" : "BR-ADR-008",
+        "Description" : "BR-ADR-008 : IFCIN & IFCOUT == ASN, RDCReceived Greather than ASN",
+        "Solution" : "Pay ASN",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCShippedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "RDCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "<",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : ">",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    },
+    {
+        "RuleID" : "BR-ADR-009",
+        "Description" : "BR-ADR-009 : IFCIN == ASN,  IFCOUT != ASN, RDCReceived Greather than ASN",
+        "Solution" : "Pay ASN",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCShippedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "!=",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "!=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "RDCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "<",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : ">",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    },
+    {
+        "RuleID" : "BR-ADR-010",
+        "Description" : "BR-ADR-010 : IFCIN & IFCOUT == ASN, RDCReceived lesser than ASN",
+        "Solution" : "Pay RDC",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCShippedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "RDCReceivedQuantityMatched",
+                "MinimumValue" : 0,  
+                "MinimumComparisonType" : "<",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "<",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    },
+    {
+        "RuleID" : "BR-ADR-011",
+        "Description" : "BR-ADR-011 : IFCIN == ASN, IFCOUT != ASN, RDCReceived lesser than ASN",
+        "Solution" : "Pay RDC",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCShippedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "!=",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "!=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "RDCReceivedQuantityMatched",
+                "MinimumValue" : 0,  
+                "MinimumComparisonType" : "<",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "<",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    },
+    {
+        "RuleID" : "BR-ADR-012",
+        "Description" : "BR-ADR-012 : IFCIN != ASN, IFCOUT == ASN, RDC != ASN",
+        "Solution" : "Further Analysis Required",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "!=",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "!=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCShippedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "==",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "==",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "RDCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "!=",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "!=",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    },
+    {
+        "RuleID" : "BR-ADR-013",
+        "Description" : "BR-ADR-013 : IFCIN != ASN, IFCOUT != ASN, RDC != ASN",
+        "Solution" : "Further Analysis Required",
+        "Conditions" : [
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "!=",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "!=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "IFCShippedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "!=",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "!=",
+                "LastUpdatedDate" : 0
+            },
+            {
+                "RuleConditionID" : "", 
+                "RuleID" :  "",  
+                "Description" :  "", 
+                "FactType" : "RDCReceivedQuantityMatched",
+                "MinimumValue" : 100,  
+                "MinimumComparisonType" : "!=",
+                "MaximumValue" : 100,
+                "MaximumComparisonType" : "!=",
+                "LastUpdatedDate" : 0
+            }
+        ]  
+    }
+
+]

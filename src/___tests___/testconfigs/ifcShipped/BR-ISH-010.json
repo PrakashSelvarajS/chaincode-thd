@@ -1,0 +1,122 @@
+{
+    "input": {        
+        "RecommendedSolution" : "",
+        "PONumber" : "ISH_DOES_EXIST_PARTIAL",
+        "IFCShippeds" : [                           
+            {
+                "RecordID": "ISH_DOES_EXIST_PARTIAL",
+                "PONumber": "ISH_DOES_EXIST_PARTIAL", 
+                "CreatedDateTime": 0,
+                "ShippedDateTime": 0,
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 0,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION",
+                "TCASNID": "TCASNID",
+                "BOLNumber": "BOLNUMBER",
+                "PRONumber": "PRONUMBER",
+                "Carrier": "CARRIER"
+            }
+        ]
+    },
+    "output": {
+        "PONumber" : "ISH_DOES_EXIST_PARTIAL",
+        "RecommendedSolution" : "Further Analysis Required",
+        "PurchaseOrders" : [            
+            {
+                "RecordID": "ISH_DOES_EXIST_PARTIAL",
+                "PONumber": "ISH_DOES_EXIST_PARTIAL",
+                "Description": "hammers",
+                "IFCDC": "IFCDC",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "UnitPrice": 2.12,
+                "VendorID": "VENDORID",
+                "CreatedDateTime": 0
+            }
+        ],
+        "VendorShippeds" : [
+            {
+                "RecordID": "ISH_DOES_EXIST_PARTIAL",
+                "PONumber": "ISH_DOES_EXIST_PARTIAL",            
+                "UCC128" : "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "ASNNumber" : "ASNNUMBER",
+                "ASNShipmentID" : "ASNSHIPMENTID",
+                "CreatedDateTime" : 0,
+                "POLineItem" : 1
+            }
+        ],     
+        "IFCReceiveds" : [          
+            {
+                "RecordID": "ISH_DOES_EXIST_PARTIAL",
+                "PONumber": "ISH_DOES_EXIST_PARTIAL",     
+                "CheckinDateTime": 0,
+                "ReceivedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN":  "SKUGTIN",
+                "OrderQuantity": 1,
+                "ShippedQuantity": 1,
+                "ReceivedQuantity": 1,
+                "VendorID": "VENDORID",              
+                "Description": "DESCRIPTION"
+            }
+        ],
+        "IFCStageds": [                     
+            {
+                "RecordID": "ISH_DOES_EXIST_PARTIAL",
+                "PONumber": "ISH_DOES_EXIST_PARTIAL",  
+                "CreatedDateTime": 0,
+                "UCC128": "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "Quantity": 1,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION"
+            }
+        ],
+        "IFCShippeds" : [                           
+            {
+                "RecordID": "ISH_DOES_EXIST_PARTIAL",
+                "PONumber": "ISH_DOES_EXIST_PARTIAL", 
+                "CreatedDateTime": 0,
+                "ShippedDateTime": 0,
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 0,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION",
+                "TCASNID": "TCASNID",
+                "BOLNumber": "BOLNUMBER",
+                "PRONumber": "PRONUMBER",
+                "Carrier": "CARRIER"
+            }
+        ],
+        "IFCShippedDiscrepancies" : [            
+            {
+                "DiscrepancyID": "ISH_DOES_EXIST_PARTIAL-Shortage-IFCShipped-ISH_DOES_EXIST_PARTIAL-SKU",
+                "DiscrepancyType": "Shortage",
+                "StageType": "IFCShipped",
+                "RecordID": "ISH_DOES_EXIST_PARTIAL",
+                "ItemID": "SKU",
+                "ExpectedQuantity": 1,
+                "ObservedQuantity": 0,
+                "PONumber": "ISH_DOES_EXIST_PARTIAL"
+            }
+        ],
+        "PurchaseOrderDiscrepancies": [],
+        "VendorShippedDiscrepancies": [],
+        "IFCReceivedDiscrepancies": [],
+        "IFCStagedDiscrepancies" : []
+    }
+}

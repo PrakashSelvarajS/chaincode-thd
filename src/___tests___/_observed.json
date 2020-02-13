@@ -1,0 +1,1090 @@
+{
+    "$schema": "https://fabric-shim.github.io/release-1.4/contract-schema.json",
+    "contracts": {
+        "com.homedepot.procurement.InitializationContract": {
+            "name": "com.homedepot.procurement.InitializationContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.InitializationContract",
+                "default": true
+            },
+            "transactions": [
+                {
+                    "tag": [],
+                    "parameters": [],
+                    "name": "init"
+                }
+            ],
+            "info": {
+                "title": "InitializationContract",
+                "description": "Contract for initializing the environment for the current chaincode",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.UnitOfMeasureContract": {
+            "name": "com.homedepot.procurement.UnitOfMeasureContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.UnitOfMeasureContract"
+            },
+            "transactions": [
+                {
+                    "returns": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/UnitOfMeasure"
+                        }
+                    },
+                    "name": "saveUnitOfMeasure",
+                    "parameters": [
+                        {
+                            "name": "newUOMs",
+                            "description": "",
+                            "schema": {
+                                "$ref": "#/components/schemas/Array"
+                            }
+                        }
+                    ],
+                    "tag": [
+                        "submitTx"
+                    ]
+                },
+                {
+                    "returns": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/UnitOfMeasure"
+                        }
+                    },
+                    "name": "retrieveUnitOfMeasure",
+                    "tag": [],
+                    "parameters": []
+                }
+            ],
+            "info": {
+                "title": "UnitOfMeasureContract",
+                "description": "Contract for managing the \"Unit-of-Measure\" data for a Vendor",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.VendorContract": {
+            "name": "com.homedepot.procurement.VendorContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.VendorContract"
+            },
+            "transactions": [
+                {
+                    "returns": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Vendor"
+                        }
+                    },
+                    "name": "saveVendor",
+                    "parameters": [
+                        {
+                            "name": "newVendors",
+                            "description": "",
+                            "schema": {
+                                "$ref": "#/components/schemas/Array"
+                            }
+                        }
+                    ],
+                    "tag": [
+                        "submitTx"
+                    ]
+                },
+                {
+                    "returns": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Vendor"
+                        }
+                    },
+                    "name": "retrieveVendor",
+                    "tag": [],
+                    "parameters": []
+                }
+            ],
+            "info": {
+                "title": "VendorContract",
+                "description": "Contract for managing the list of \"Vendor\" (and sub-vendor) identification data for a Vendor",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.AssetProcurementContract": {
+            "name": "com.homedepot.procurement.AssetProcurementContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.AssetProcurementContract"
+            },
+            "transactions": [
+                {
+                    "returns": {
+                        "$ref": "#/components/schemas/AssetProcurement"
+                    },
+                    "name": "retrieveAssetProcurement",
+                    "parameters": [
+                        {
+                            "name": "poNumber",
+                            "description": "",
+                            "schema": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "tag": []
+                },
+                {
+                    "returns": {
+                        "$ref": "#/components/schemas/AssetProcurement"
+                    },
+                    "name": "reprocessAssetProcurement",
+                    "parameters": [
+                        {
+                            "name": "poNumber",
+                            "description": "",
+                            "schema": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "tag": [
+                        "submitTx"
+                    ]
+                }
+            ],
+            "info": {
+                "title": "AssetProcurementContract",
+                "description": "Contract for managing the \"Asset Procurement\" data for a Vendor",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.PurchaseOrderContract": {
+            "name": "com.homedepot.procurement.PurchaseOrderContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.PurchaseOrderContract"
+            },
+            "transactions": [
+                {
+                    "returns": {
+                        "$ref": "#/components/schemas/AssetProcurement"
+                    },
+                    "name": "savePurchaseOrder",
+                    "parameters": [
+                        {
+                            "name": "poNumber",
+                            "description": "",
+                            "schema": {
+                                "type": "string"
+                            }
+                        },
+                        {
+                            "name": "newPurchaseOrderList",
+                            "description": "",
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/PurchaseOrder"
+                                }
+                            }
+                        }
+                    ],
+                    "tag": [
+                        "submitTx"
+                    ]
+                }
+            ],
+            "info": {
+                "title": "PurchaseOrderContract",
+                "description": "Contract for managing the list of PurchaseOrders, and their related discrepancies",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.VendorShippedContract": {
+            "name": "com.homedepot.procurement.VendorShippedContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.VendorShippedContract"
+            },
+            "transactions": [
+                {
+                    "returns": {
+                        "$ref": "#/components/schemas/AssetProcurement"
+                    },
+                    "name": "saveVendorShipped",
+                    "parameters": [
+                        {
+                            "name": "poNumber",
+                            "description": "",
+                            "schema": {
+                                "type": "string"
+                            }
+                        },
+                        {
+                            "name": "newVendorShippedList",
+                            "description": "",
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/VendorShipped"
+                                }
+                            }
+                        }
+                    ],
+                    "tag": [
+                        "submitTx"
+                    ]
+                }
+            ],
+            "info": {
+                "title": "VendorShippedContract",
+                "description": "Contract for managing the list of VendorShippeds, and their related discrepancies",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.IFCReceivedContract": {
+            "name": "com.homedepot.procurement.IFCReceivedContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.IFCReceivedContract"
+            },
+            "transactions": [
+                {
+                    "returns": {
+                        "$ref": "#/components/schemas/AssetProcurement"
+                    },
+                    "name": "saveIFCReceived",
+                    "parameters": [
+                        {
+                            "name": "poNumber",
+                            "description": "",
+                            "schema": {
+                                "type": "string"
+                            }
+                        },
+                        {
+                            "name": "newIFCReceivedList",
+                            "description": "",
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/IFCReceived"
+                                }
+                            }
+                        }
+                    ],
+                    "tag": [
+                        "submitTx"
+                    ]
+                }
+            ],
+            "info": {
+                "title": "IFCReceivedContract",
+                "description": "Contract for managing the list of IFCReceiveds, and their related discrepancies",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.IFCStagedContract": {
+            "name": "com.homedepot.procurement.IFCStagedContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.IFCStagedContract"
+            },
+            "transactions": [
+                {
+                    "returns": {
+                        "$ref": "#/components/schemas/AssetProcurement"
+                    },
+                    "name": "saveIFCStaged",
+                    "parameters": [
+                        {
+                            "name": "poNumber",
+                            "description": "",
+                            "schema": {
+                                "type": "string"
+                            }
+                        },
+                        {
+                            "name": "newIFCStagedList",
+                            "description": "",
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/IFCStaged"
+                                }
+                            }
+                        }
+                    ],
+                    "tag": [
+                        "submitTx"
+                    ]
+                }
+            ],
+            "info": {
+                "title": "IFCStagedContract",
+                "description": "Contract for managing the list of IFCStageds, and their related discrepancies",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.IFCShippedContract": {
+            "name": "com.homedepot.procurement.IFCShippedContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.IFCShippedContract"
+            },
+            "transactions": [
+                {
+                    "returns": {
+                        "$ref": "#/components/schemas/AssetProcurement"
+                    },
+                    "name": "saveIFCShipped",
+                    "parameters": [
+                        {
+                            "name": "poNumber",
+                            "description": "",
+                            "schema": {
+                                "type": "string"
+                            }
+                        },
+                        {
+                            "name": "newIFCShippedList",
+                            "description": "",
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/IFCShipped"
+                                }
+                            }
+                        }
+                    ],
+                    "tag": [
+                        "submitTx"
+                    ]
+                }
+            ],
+            "info": {
+                "title": "IFCShippedContract",
+                "description": "Contract for managing the list of IFCShippeds, and their related discrepancies",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.RDCReceivedContract": {
+            "name": "com.homedepot.procurement.RDCReceivedContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.RDCReceivedContract"
+            },
+            "transactions": [
+                {
+                    "returns": {
+                        "$ref": "#/components/schemas/AssetProcurement"
+                    },
+                    "name": "saveRDCReceived",
+                    "parameters": [
+                        {
+                            "name": "poNumber",
+                            "description": "",
+                            "schema": {
+                                "type": "string"
+                            }
+                        },
+                        {
+                            "name": "newRDCReceivedList",
+                            "description": "",
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/RDCReceived"
+                                }
+                            }
+                        }
+                    ],
+                    "tag": [
+                        "submitTx"
+                    ]
+                }
+            ],
+            "info": {
+                "title": "RDCReceivedContract",
+                "description": "Contract for managing the list of RDCReceiveds, and their related discrepancies",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.InvoiceContract": {
+            "name": "com.homedepot.procurement.InvoiceContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.InvoiceContract"
+            },
+            "transactions": [
+                {
+                    "returns": {
+                        "$ref": "#/components/schemas/AssetProcurement"
+                    },
+                    "name": "saveInvoice",
+                    "parameters": [
+                        {
+                            "name": "poNumber",
+                            "description": "",
+                            "schema": {
+                                "type": "string"
+                            }
+                        },
+                        {
+                            "name": "newInvoiceList",
+                            "description": "",
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/Invoice"
+                                }
+                            }
+                        }
+                    ],
+                    "tag": [
+                        "submitTx"
+                    ]
+                }
+            ],
+            "info": {
+                "title": "InvoiceContract",
+                "description": "Contract for managing the list of Invoices, and their related discrepancies",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.ADRRuleContract": {
+            "name": "com.homedepot.procurement.ADRRuleContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.ADRRuleContract"
+            },
+            "transactions": [
+                {
+                    "returns": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ADRRule"
+                        }
+                    },
+                    "name": "retrieveADRRules",
+                    "tag": [],
+                    "parameters": []
+                }
+            ],
+            "info": {
+                "title": "ADRRuleContract",
+                "description": "Contract for managing the \"Automated Dispute Resolution Rule\" data for a Vendor",
+                "version": ""
+            }
+        },
+        "com.homedepot.procurement.ValidatorConfigContract": {
+            "name": "com.homedepot.procurement.ValidatorConfigContract",
+            "contractInstance": {
+                "name": "com.homedepot.procurement.ValidatorConfigContract"
+            },
+            "transactions": [
+                {
+                    "tag": [],
+                    "parameters": [],
+                    "name": "logCurrentValidationConfig"
+                }
+            ],
+            "info": {
+                "title": "ValidatorConfigContract",
+                "description": "Contract for managing the configuration of the DataModel Validators",
+                "version": ""
+            }
+        },
+        "org.hyperledger.fabric": {
+            "name": "org.hyperledger.fabric",
+            "contractInstance": {
+                "name": "org.hyperledger.fabric"
+            },
+            "transactions": [
+                {
+                    "name": "GetMetadata"
+                }
+            ],
+            "info": {
+                "title": "",
+                "version": ""
+            }
+        }
+    },
+    "info": {
+        "version": "0.0.5",
+        "title": "p2pay"
+    },
+    "components": {
+        "schemas": {
+            "AssetProcurement": {
+                "$id": "AssetProcurement",
+                "type": "object",
+                "properties": {
+                    "PONumber": {
+                        "type": "string"
+                    },
+                    "RecommendedSolution": {
+                        "type": "string"
+                    },
+                    "PurchaseOrders": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "PurchaseOrder"
+                        }
+                    },
+                    "PurchaseOrderDiscrepancies": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "Discrepancy"
+                        }
+                    },
+                    "VendorShippeds": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "VendorShipped"
+                        }
+                    },
+                    "VendorShippedDiscrepancies": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "Discrepancy"
+                        }
+                    },
+                    "IFCReceiveds": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "IFCReceived"
+                        }
+                    },
+                    "IFCReceivedDiscrepancies": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "Discrepancy"
+                        }
+                    },
+                    "IFCStageds": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "IFCStaged"
+                        }
+                    },
+                    "IFCStagedDiscrepancies": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "Discrepancy"
+                        }
+                    },
+                    "IFCShippeds": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "IFCShipped"
+                        }
+                    },
+                    "IFCShippedDiscrepancies": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "Discrepancy"
+                        }
+                    },
+                    "RDCReceiveds": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "RDCReceived"
+                        }
+                    },
+                    "RDCReceivedDiscrepancies": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "Discrepancy"
+                        }
+                    },
+                    "Invoices": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "Invoice"
+                        }
+                    },
+                    "InvoiceDiscrepancies": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "Discrepancy"
+                        }
+                    }
+                }
+            },
+            "Discrepancy": {
+                "$id": "Discrepancy",
+                "type": "object",
+                "properties": {
+                    "PONumber": {
+                        "type": "string"
+                    },
+                    "DiscrepancyID": {
+                        "type": "string"
+                    },
+                    "DiscrepancyType": {
+                        "type": "string"
+                    },
+                    "StageType": {
+                        "type": "string"
+                    },
+                    "RecordID": {
+                        "type": "string"
+                    },
+                    "ItemID": {
+                        "type": "string"
+                    },
+                    "ExpectedQuantity": {
+                        "type": "number"
+                    },
+                    "ObservedQuantity": {
+                        "type": "number"
+                    }
+                }
+            },
+            "StageDetails": {
+                "$id": "StageDetails",
+                "type": "object",
+                "properties": {
+                    "RecordID": {
+                        "type": "string"
+                    },
+                    "PONumber": {
+                        "type": "string"
+                    }
+                }
+            },
+            "IFCReceived": {
+                "$id": "IFCReceived",
+                "allOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "CheckinDateTime": {
+                                "type": "number"
+                            },
+                            "ReceivedDateTime": {
+                                "type": "number"
+                            },
+                            "UCC128": {
+                                "type": "string"
+                            },
+                            "RDC": {
+                                "type": "string"
+                            },
+                            "SKU": {
+                                "type": "string"
+                            },
+                            "SKUGTIN": {
+                                "type": "string"
+                            },
+                            "OrderQuantity": {
+                                "type": "number"
+                            },
+                            "ShippedQuantity": {
+                                "type": "number"
+                            },
+                            "ReceivedQuantity": {
+                                "type": "number"
+                            },
+                            "VendorID": {
+                                "type": "string"
+                            },
+                            "Description": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "$ref": "StageDetails"
+                    }
+                ]
+            },
+            "IFCShipped": {
+                "$id": "IFCShipped",
+                "allOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "CreatedDateTime": {
+                                "type": "number"
+                            },
+                            "ShippedDateTime": {
+                                "type": "number"
+                            },
+                            "RDC": {
+                                "type": "string"
+                            },
+                            "SKU": {
+                                "type": "string"
+                            },
+                            "SKUGTIN": {
+                                "type": "string"
+                            },
+                            "Quantity": {
+                                "type": "number"
+                            },
+                            "VendorID": {
+                                "type": "string"
+                            },
+                            "Description": {
+                                "type": "string"
+                            },
+                            "TCASNID": {
+                                "type": "string"
+                            },
+                            "BOLNumber": {
+                                "type": "string"
+                            },
+                            "PRONumber": {
+                                "type": "string"
+                            },
+                            "Carrier": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "$ref": "StageDetails"
+                    }
+                ]
+            },
+            "IFCStaged": {
+                "$id": "IFCStaged",
+                "allOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "CreatedDateTime": {
+                                "type": "number"
+                            },
+                            "UCC128": {
+                                "type": "string"
+                            },
+                            "RDC": {
+                                "type": "string"
+                            },
+                            "SKU": {
+                                "type": "string"
+                            },
+                            "Quantity": {
+                                "type": "number"
+                            },
+                            "VendorID": {
+                                "type": "string"
+                            },
+                            "Description": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "$ref": "StageDetails"
+                    }
+                ]
+            },
+            "Invoice": {
+                "$id": "Invoice",
+                "allOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "InvoiceNumber": {
+                                "type": "string"
+                            },
+                            "InvoiceDate": {
+                                "type": "number"
+                            },
+                            "PVendorID": {
+                                "type": "string"
+                            },
+                            "MVendorID": {
+                                "type": "string"
+                            },
+                            "RDC": {
+                                "type": "string"
+                            },
+                            "MerDeptNumber": {
+                                "type": "string"
+                            },
+                            "SKU": {
+                                "type": "string"
+                            },
+                            "InvoiceQuantity": {
+                                "type": "number"
+                            },
+                            "UnitCostAmount": {
+                                "type": "number"
+                            },
+                            "TotalCostAmount": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    {
+                        "$ref": "StageDetails"
+                    }
+                ]
+            },
+            "PurchaseOrder": {
+                "$id": "PurchaseOrder",
+                "allOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "CreatedDateTime": {
+                                "type": "number"
+                            },
+                            "IFCDC": {
+                                "type": "string"
+                            },
+                            "Quantity": {
+                                "type": "number"
+                            },
+                            "SKU": {
+                                "type": "string"
+                            },
+                            "RDC": {
+                                "type": "string"
+                            },
+                            "SKUGTIN": {
+                                "type": "string"
+                            },
+                            "VendorID": {
+                                "type": "string"
+                            },
+                            "Description": {
+                                "type": "string"
+                            },
+                            "UnitPrice": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    {
+                        "$ref": "StageDetails"
+                    }
+                ]
+            },
+            "RDCReceived": {
+                "$id": "RDCReceived",
+                "allOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "CreatedDateTime": {
+                                "type": "number"
+                            },
+                            "KeyRecNumber": {
+                                "type": "string"
+                            },
+                            "RDC": {
+                                "type": "string"
+                            },
+                            "SKU": {
+                                "type": "string"
+                            },
+                            "Quantity": {
+                                "type": "number"
+                            },
+                            "UnitCost": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    {
+                        "$ref": "StageDetails"
+                    }
+                ]
+            },
+            "VendorShipped": {
+                "$id": "VendorShipped",
+                "allOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "CreatedDateTime": {
+                                "type": "number"
+                            },
+                            "ASNNumber": {
+                                "type": "string"
+                            },
+                            "ASNShipmentID": {
+                                "type": "string"
+                            },
+                            "UCC128": {
+                                "type": "string"
+                            },
+                            "RDC": {
+                                "type": "string"
+                            },
+                            "SKU": {
+                                "type": "string"
+                            },
+                            "SKUGTIN": {
+                                "type": "string"
+                            },
+                            "Quantity": {
+                                "type": "number"
+                            },
+                            "POLineItem": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    {
+                        "$ref": "StageDetails"
+                    }
+                ]
+            },
+            "UnitOfMeasure": {
+                "$id": "UnitOfMeasure",
+                "type": "object",
+                "properties": {
+                    "RecordID": {
+                        "type": "string"
+                    },
+                    "VendorID": {
+                        "type": "string"
+                    },
+                    "SKU": {
+                        "type": "string"
+                    },
+                    "SKUGTIN": {
+                        "type": "string"
+                    },
+                    "Description": {
+                        "type": "string"
+                    },
+                    "UnitWeight": {
+                        "type": "number"
+                    },
+                    "UnitVolume": {
+                        "type": "number"
+                    },
+                    "UnitHeight": {
+                        "type": "number"
+                    },
+                    "UnitLength": {
+                        "type": "number"
+                    },
+                    "UnitWidth": {
+                        "type": "number"
+                    }
+                }
+            },
+            "UnitOfMeasureList": {
+                "$id": "UnitOfMeasureList",
+                "type": "object",
+                "properties": {
+                    "Items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "UnitOfMeasure"
+                        }
+                    }
+                }
+            },
+            "Vendor": {
+                "$id": "Vendor",
+                "type": "object",
+                "properties": {
+                    "RecordID": {
+                        "type": "string"
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "TenantName": {
+                        "type": "string"
+                    },
+                    "HLFOrganization": {
+                        "type": "string"
+                    },
+                    "HLFMemberServicesProvider": {
+                        "type": "string"
+                    },
+                    "ParentVendorID": {
+                        "type": "string"
+                    },
+                    "VendorID": {
+                        "type": "string"
+                    },
+                    "LastUpdatedDate": {
+                        "type": "number"
+                    }
+                }
+            },
+            "VendorList": {
+                "$id": "VendorList",
+                "type": "object",
+                "properties": {
+                    "Items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "Vendor"
+                        }
+                    }
+                }
+            },
+            "ADRRule": {
+                "$id": "ADRRule",
+                "type": "object",
+                "properties": {
+                    "RuleID": {
+                        "type": "string"
+                    },
+                    "Description": {
+                        "type": "string"
+                    },
+                    "Solution": {
+                        "type": "string"
+                    },
+                    "Conditions": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "ADRRuleCondition"
+                        }
+                    }
+                }
+            },
+            "ADRRuleCondition": {
+                "$id": "ADRRuleCondition",
+                "type": "object",
+                "properties": {
+                    "RuleConditionID": {
+                        "type": "string"
+                    },
+                    "RuleID": {
+                        "type": "string"
+                    },
+                    "Description": {
+                        "type": "string"
+                    },
+                    "FactType": {
+                        "type": "string"
+                    },
+                    "MinimumValue": {
+                        "type": "number"
+                    },
+                    "MinimumComparisonType": {
+                        "type": "string"
+                    },
+                    "MaximumValue": {
+                        "type": "number"
+                    },
+                    "MaximumComparisonType": {
+                        "type": "string"
+                    },
+                    "LastUpdatedDate": {
+                        "type": "number"
+                    }
+                }
+            },
+            "ADRRuleList": {
+                "$id": "ADRRuleList",
+                "type": "object",
+                "properties": {
+                    "Items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "ADRRule"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

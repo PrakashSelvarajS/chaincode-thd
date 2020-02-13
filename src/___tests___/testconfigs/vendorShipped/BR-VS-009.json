@@ -1,0 +1,68 @@
+{
+    "input": {
+        "RecommendedSolution": "",
+        "PONumber": "VS_DOES_EXIST_PARTIAL",
+        "VendorShippeds": [
+            {
+                "RecordID": "NEW_RECORDID",
+                "PONumber": "VS_DOES_EXIST_PARTIAL",
+                "UCC128": "UCC128",
+                "RDC": "RDC_1",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "ASNNumber": "ASNNUMBER",
+                "ASNShipmentID": "ASNSHIPMENTID",
+                "CreatedDateTime": 1,
+                "POLineItem": 2
+            }
+        ]
+    },
+    "output": {
+        "RecommendedSolution": "Further Analysis Required",
+        "PONumber": "VS_DOES_EXIST_PARTIAL",
+        "PurchaseOrders": [
+            {
+                "RecordID": "VS_DOES_EXIST_PARTIAL_DEFAULT",
+                "PONumber": "VS_DOES_EXIST_PARTIAL",
+                "Description": "hammers",
+                "IFCDC": "IFCDC",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "UnitPrice": 2.12,
+                "VendorID": "VENDORID",
+                "CreatedDateTime": 0
+            }
+        ],
+        "VendorShippeds": [
+            {
+                "RecordID": "NEW_RECORDID",
+                "PONumber": "VS_DOES_EXIST_PARTIAL",
+                "UCC128": "UCC128",
+                "RDC": "RDC_1",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "ASNNumber": "ASNNUMBER",
+                "ASNShipmentID": "ASNSHIPMENTID",
+                "CreatedDateTime": 1,
+                "POLineItem": 2
+            }
+        ],
+        "VendorShippedDiscrepancies": [
+            {
+                "DiscrepancyID": "VS_DOES_EXIST_PARTIAL-WrongRDC-VendorShipped-NEW_RECORDID-RDC_1",
+                "DiscrepancyType": "WrongRDC",
+                "StageType": "VendorShipped",
+                "RecordID": "NEW_RECORDID",
+                "ItemID": "RDC_1",
+                "ExpectedQuantity": 0,
+                "ObservedQuantity": 0,
+                "PONumber": "VS_DOES_EXIST_PARTIAL"
+            }
+        ],
+        "PurchaseOrderDiscrepancies": []
+    }
+}

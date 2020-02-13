@@ -1,0 +1,46 @@
+{
+    "input": {
+        "RecommendedSolution": "",
+        "PONumber": "DOES_NOT_EXIST",
+        "RDCReceiveds": [
+            {                
+                "RecordID": "DOES_NOT_EXIST",
+                "PONumber": "DOES_NOT_EXIST", 
+                "CreatedDateTime": 0,
+                "KeyRecNumber": "KEYRECNUMBER",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "Quantity": 1,
+                "UnitCost": 1.21
+            }
+        ]
+    },
+    "output": {
+        "RecommendedSolution": "Further Analysis Required",
+        "PONumber": "DOES_NOT_EXIST",
+        "RDCReceiveds": [
+            {                
+                "RecordID": "DOES_NOT_EXIST",
+                "PONumber": "DOES_NOT_EXIST", 
+                "CreatedDateTime": 0,
+                "KeyRecNumber": "KEYRECNUMBER",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "Quantity": 1,
+                "UnitCost": 1.21
+            }
+        ],
+        "PurchaseOrderDiscrepancies": [
+            {
+                "DiscrepancyID": "DOES_NOT_EXIST-MissingPO-PurchaseOrdered--DOES_NOT_EXIST",
+                "DiscrepancyType": "MissingPO",
+                "StageType": "PurchaseOrdered",
+                "RecordID": "",
+                "ItemID": "DOES_NOT_EXIST",
+                "ExpectedQuantity": 1,
+                "ObservedQuantity": 0,
+                "PONumber": "DOES_NOT_EXIST"
+            }
+        ]
+    }
+}

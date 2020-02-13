@@ -1,0 +1,54 @@
+{
+    "input": {
+        "RecommendedSolution": "",
+        "PONumber": "DOES_NOT_EXIST",
+        "Invoices": [    
+            {                
+                "RecordID": "DOES_NOT_EXIST",
+                "PONumber": "DOES_NOT_EXIST",   
+                "InvoiceNumber": "DOES_NOT_EXIST",
+                "InvoiceDate": 0,
+                "PVendorID": "PVENDORID",
+                "MVendorID": "MVENDORID",
+                "RDC": "RDCVALUE",
+                "MerDeptNumber": "MER_DEPT_NUMBER",
+                "SKU": "SKU",
+                "InvoiceQuantity": 1,
+                "UnitCostAmount": 1.00,
+                "TotalCostAmount": 1.00
+            }
+        ]
+    },
+    "output": {
+        "RecommendedSolution": "Further Analysis Required",
+        "PONumber": "DOES_NOT_EXIST",
+        "Invoices": [    
+            {                
+                "RecordID": "DOES_NOT_EXIST",
+                "PONumber": "DOES_NOT_EXIST",   
+                "InvoiceNumber": "DOES_NOT_EXIST",
+                "InvoiceDate": 0,
+                "PVendorID": "PVENDORID",
+                "MVendorID": "MVENDORID",
+                "RDC": "RDCVALUE",
+                "MerDeptNumber": "MER_DEPT_NUMBER",
+                "SKU": "SKU",
+                "InvoiceQuantity": 1,
+                "UnitCostAmount": 1.00,
+                "TotalCostAmount": 1.00
+            }
+        ],
+        "PurchaseOrderDiscrepancies": [
+            {
+                "DiscrepancyID": "DOES_NOT_EXIST-MissingPO-PurchaseOrdered--DOES_NOT_EXIST",
+                "DiscrepancyType": "MissingPO",
+                "StageType": "PurchaseOrdered",
+                "RecordID": "",
+                "ItemID": "DOES_NOT_EXIST",
+                "ExpectedQuantity": 1,
+                "ObservedQuantity": 0,
+                "PONumber": "DOES_NOT_EXIST"
+            }
+        ]
+    }
+}

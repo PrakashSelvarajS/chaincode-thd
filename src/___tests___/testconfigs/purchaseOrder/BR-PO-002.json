@@ -1,0 +1,38 @@
+{
+    "input": {
+        "RecommendedSolution" : "",
+        "PONumber" : "PO_DOES_EXIST",
+        "PurchaseOrders" : [{
+            "RecordID": "NEW_RECORDID",
+            "PONumber": "PO_DOES_EXIST",
+            "Description": "NEW_DESCRIPTION",
+            "IFCDC": "IFCDC",
+            "RDC": "RDCVALUE",
+            "SKU": "SKU",
+            "SKUGTIN": "SKUGTIN",
+            "Quantity": 10,
+            "UnitPrice": 0.01,
+            "VendorID": "NEW_VENDORID",
+            "CreatedDateTime": 0
+        }],
+        "PurchaseOrderDiscrepancies" : []
+    },
+    "output": {
+        "RecommendedSolution" : "Further Analysis Required",
+        "PONumber" : "PO_DOES_EXIST",
+        "PurchaseOrders" : [{
+            "RecordID": "NEW_RECORDID",
+            "PONumber": "PO_DOES_EXIST",
+            "Description": "DESCRIPTION",
+            "IFCDC": "IFCDC",
+            "RDC": "RDCVALUE",
+            "SKU": "SKU",
+            "SKUGTIN": "SKUGTIN",
+            "Quantity": 10,
+            "UnitPrice": 0.01,
+            "VendorID": "NEW_VENDORID",
+            "CreatedDateTime": 0
+        }],
+        "PurchaseOrderDiscrepancies" : []
+    }
+}

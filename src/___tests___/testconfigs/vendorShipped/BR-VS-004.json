@@ -1,0 +1,180 @@
+{
+    "input": {        
+        "RecommendedSolution" : "",
+        "PONumber" : "VS_DOES_EXIST",
+        "VendorShippeds" : [
+            {
+                "RecordID": "VS_DOES_EXIST_VS_3",
+                "PONumber": "VS_DOES_EXIST",            
+                "UCC128" : "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 2,
+                "ASNNumber" : "ASNNUMBER",
+                "ASNShipmentID" : "ASNSHIPMENTID",
+                "CreatedDateTime" : 2,
+                "POLineItem" : 2
+            }
+        ]        
+    },
+    "output": {        
+        "RecommendedSolution" : "Further Analysis Required",
+        "PONumber" : "VS_DOES_EXIST",
+        "PurchaseOrders": [
+            {
+                "RecordID": "VS_DOES_EXIST_PO_1",
+                "PONumber": "VS_DOES_EXIST",
+                "Description": "DESCRIPTION",
+                "IFCDC": "IFCDC",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 2,
+                "UnitPrice": 1.99,
+                "VendorID": "VENDORID"
+            }
+        ],
+        "VendorShippeds" : [ 
+            {
+                "RecordID": "VS_DOES_EXIST_VS_3",
+                "PONumber": "VS_DOES_EXIST",            
+                "UCC128" : "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 2,
+                "ASNNumber" : "ASNNUMBER",
+                "ASNShipmentID" : "ASNSHIPMENTID",
+                "CreatedDateTime" : 2,
+                "POLineItem" : 2
+            }
+        ],
+        "VendorShippedDiscrepancies": [],
+        "PurchaseOrderDiscrepancies": []
+    },
+    "existingAPs": [{
+        "PONumber" : "VS_DOES_EXIST",
+        "RecommendedSolution" : "",
+        "PurchaseOrders": [
+            {
+                "RecordID": "VS_DOES_EXIST_PO_1",
+                "PONumber": "VS_DOES_EXIST",
+                "Description": "DESCRIPTION",
+                "IFCDC": "IFCDC",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 2,
+                "UnitPrice": 1.99,
+                "VendorID": "VENDORID"
+            }
+        ],
+        "VendorShippeds" : [
+            {
+                "RecordID": "VS_DOES_EXIST_VS_1",
+                "PONumber": "VS_DOES_EXIST",            
+                "UCC128" : "UCC128",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "ASNNumber" : "ASNNUMBER",
+                "ASNShipmentID" : "ASNSHIPMENTID",
+                "CreatedDateTime" : 1,
+                "POLineItem" : 1
+            }
+        ],     
+        "VendorShippedDiscrepancies" : []
+    }],
+    "existingUOMs": [
+        {
+            "RecordID": "BASIC",
+            "Description": "DESCRIPTION",
+            "SKU": "SKU",
+            "SKUGTIN": "SKUGTIN",
+            "UnitHeight": 100.00,
+            "UnitLength": 200.00,
+            "UnitVolume": 300.00,
+            "UnitWeight": 400.00,
+            "UnitWidth":  500.00
+        },
+        {
+            "RecordID": "SKU_UCC128_MATCH",
+            "Description": "DESCRIPTION",
+            "SKU": "SKU_UCC128_MATCH",
+            "SKUGTIN": "SKUGTIN",
+            "UnitHeight": 100.00,
+            "UnitLength": 200.00,
+            "UnitVolume": 300.00,
+            "UnitWeight": 400.00,
+            "UnitWidth":  500.00
+        },
+        {
+            "RecordID": "SKU_RDC_MATCH",
+            "Description": "DESCRIPTION",
+            "SKU": "SKU_RDC_MATCH",
+            "SKUGTIN": "SKUGTIN",
+            "UnitHeight": 100.00,
+            "UnitLength": 200.00,
+            "UnitVolume": 300.00,
+            "UnitWeight": 400.00,
+            "UnitWidth":  500.00
+        },
+        {
+            "RecordID": "SKU_SKU_MATCH",
+            "Description": "DESCRIPTION",
+            "SKU": "SKU_SKU_MATCH",
+            "SKUGTIN": "SKUGTIN",
+            "UnitHeight": 100.00,
+            "UnitLength": 200.00,
+            "UnitVolume": 300.00,
+            "UnitWeight": 400.00,
+            "UnitWidth":  500.00
+        },
+        {
+            "RecordID": "SKU_ASNNUMBER_MATCH",
+            "Description": "DESCRIPTION",
+            "SKU": "SKU_ASNNUMBER_MATCH",
+            "SKUGTIN": "SKUGTIN",
+            "UnitHeight": 100.00,
+            "UnitLength": 200.00,
+            "UnitVolume": 300.00,
+            "UnitWeight": 400.00,
+            "UnitWidth":  500.00
+        },
+        {
+            "RecordID": "SKU_ASNSHIPMENTID_MATCH",
+            "Description": "DESCRIPTION",
+            "SKU": "SKU_ASNSHIPMENTID_MATCH",
+            "SKUGTIN": "SKUGTIN",
+            "UnitHeight": 100.00,
+            "UnitLength": 200.00,
+            "UnitVolume": 300.00,
+            "UnitWeight": 400.00,
+            "UnitWidth":  500.00
+        },
+        {
+            "RecordID": "SKU_PARTIAL_MATCH",
+            "Description": "DESCRIPTION",
+            "SKU": "SKU_PARTIAL_MATCH",
+            "SKUGTIN": "SKUGTIN",
+            "UnitHeight": 100.00,
+            "UnitLength": 200.00,
+            "UnitVolume": 300.00,
+            "UnitWeight": 400.00,
+            "UnitWidth":  500.00
+        },
+        {
+            "RecordID": "SKU_FULL_MATCH",
+            "Description": "DESCRIPTION",
+            "SKU": "SKU_FULL_MATCH",
+            "SKUGTIN": "SKUGTIN",
+            "UnitHeight": 100.00,
+            "UnitLength": 200.00,
+            "UnitVolume": 300.00,
+            "UnitWeight": 400.00,
+            "UnitWidth":  500.00
+        }
+    ]
+}

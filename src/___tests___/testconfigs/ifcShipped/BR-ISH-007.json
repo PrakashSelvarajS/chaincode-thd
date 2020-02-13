@@ -1,0 +1,95 @@
+{
+    "input": {        
+        "RecommendedSolution" : "",
+        "PONumber" : "ISH_DOES_EXIST",
+        "IFCShippeds" : [                           
+            {
+                "RecordID": "ISH_DOES_EXIST",
+                "PONumber": "ISH_DOES_EXIST", 
+                "CreatedDateTime": 0,
+                "ShippedDateTime": 0,
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION",
+                "TCASNID": "TCASNID",
+                "BOLNumber": "BOLNUMBER",
+                "PRONumber": "PRONUMBER",
+                "Carrier": "CARRIER"
+            }
+        ]                  
+    },
+    "output": {        
+        "RecommendedSolution" : "Further Analysis Required",
+        "PONumber" : "ISH_DOES_EXIST",
+        "PurchaseOrders" : [   
+            {
+                "RecordID": "ISH_DOES_EXIST_DEFAULT",
+                "PONumber": "ISH_DOES_EXIST",
+                "Description": "hammers",
+                "IFCDC": "IFCDC",
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "UnitPrice": 2.12,
+                "VendorID": "VENDORID",
+                "CreatedDateTime": 0
+            }
+        ],
+        "IFCShippeds" : [                           
+            {
+                "RecordID": "ISH_DOES_EXIST",
+                "PONumber": "ISH_DOES_EXIST", 
+                "CreatedDateTime": 0,
+                "ShippedDateTime": 0,
+                "RDC": "RDCVALUE",
+                "SKU": "SKU",
+                "SKUGTIN": "SKUGTIN",
+                "Quantity": 1,
+                "VendorID": "VENDORID",
+                "Description": "DESCRIPTION",
+                "TCASNID": "TCASNID",
+                "BOLNumber": "BOLNUMBER",
+                "PRONumber": "PRONUMBER",
+                "Carrier": "CARRIER"
+            }
+        ],                     
+        "PurchaseOrderDiscrepancies": [],
+        "VendorShippedDiscrepancies": [
+            {
+                "DiscrepancyID": "ISH_DOES_EXIST-MissingVendorShipped-VendorShipped--ISH_DOES_EXIST",
+                "DiscrepancyType": "MissingVendorShipped",
+                "StageType": "VendorShipped",
+                "RecordID": "",
+                "ItemID": "ISH_DOES_EXIST",
+                "ExpectedQuantity": 1,
+                "ObservedQuantity": 0,
+                "PONumber": "ISH_DOES_EXIST"
+            }
+        ]
+    },
+    "existingAPs" : [
+        {        
+            "RecommendedSolution" : "",
+            "PONumber" : "ISH_DOES_EXIST",
+            "PurchaseOrders" : [   
+                {
+                    "RecordID": "ISH_DOES_EXIST_DEFAULT",
+                    "PONumber": "ISH_DOES_EXIST",
+                    "Description": "hammers",
+                    "IFCDC": "IFCDC",
+                    "RDC": "RDCVALUE",
+                    "SKU": "SKU",
+                    "SKUGTIN": "SKUGTIN",
+                    "Quantity": 1,
+                    "UnitPrice": 2.12,
+                    "VendorID": "VENDORID",
+                    "CreatedDateTime": 0
+                }
+            ]
+        }
+    ]
+}

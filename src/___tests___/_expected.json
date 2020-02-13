@@ -1,0 +1,31 @@
+{
+    "RecommendedSolution": "Further Analysis Required",
+    "PONumber": "VS_DOES_EXIST_PARTIAL",
+    "VendorShippeds": [
+        {
+            "RecordID": "NEW_RECORDID",
+            "PONumber": "VS_DOES_EXIST_PARTIAL",
+            "UCC128": "UCC128",
+            "RDC": "RDC",
+            "SKU": "SKU",
+            "SKUGTIN": "SKUGTIN",
+            "Quantity": 0,
+            "ASNNumber": "ASNNUMBER",
+            "ASNShipmentID": "ASNSHIPMENTID",
+            "CreatedDateTime": 1,
+            "POLineItem": 2
+        }
+    ],
+    "PurchaseOrderDiscrepancies": [
+        {
+            "DiscrepancyID": "VS_DOES_EXIST_PARTIAL-MissingPO-PurchaseOrdered--VS_DOES_EXIST_PARTIAL",
+            "DiscrepancyType": "MissingPO",
+            "StageType": "PurchaseOrdered",
+            "RecordID": "",
+            "ItemID": "VS_DOES_EXIST_PARTIAL",
+            "ExpectedQuantity": 1,
+            "ObservedQuantity": 0,
+            "PONumber": "VS_DOES_EXIST_PARTIAL"
+        }
+    ]
+}

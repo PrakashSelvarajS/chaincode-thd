@@ -1,0 +1,47 @@
+{
+    "input": {
+        "RecommendedSolution" : "",
+        "PONumber" : "DOES_NOT_EXIST",
+        "PurchaseOrders" : [{
+            "RecordID": "DOES_NOT_EXIST",
+            "PONumber": "DOES_NOT_EXIST",
+            "Description": "DESCRIPTION",
+            "IFCDC": "IFCDC",
+            "RDC": "RDCVALUE",
+            "SKU": "MISSING_SKU",
+            "SKUGTIN": "SKUGTIN",
+            "Quantity": 1,
+            "UnitPrice": 1.99,
+            "VendorID": "VENDORID",
+            "CreatedDateTime": 0
+        }],
+        "PurchaseOrderDiscrepancies" : []
+    },
+    "output": {
+        "RecommendedSolution" : "Further Analysis Required",
+        "PONumber" : "DOES_NOT_EXIST",
+        "PurchaseOrders" : [{
+            "RecordID": "DOES_NOT_EXIST",
+            "PONumber": "DOES_NOT_EXIST",
+            "Description": "DESCRIPTION",
+            "IFCDC": "IFCDC",
+            "RDC": "RDCVALUE",
+            "SKU": "MISSING_SKU",
+            "SKUGTIN": "SKUGTIN",
+            "Quantity": 1,
+            "UnitPrice": 1.99,
+            "VendorID": "VENDORID",
+            "CreatedDateTime": 0
+        }],
+        "PurchaseOrderDiscrepancies" : [{
+            "DiscrepancyID": "DOES_NOT_EXIST-SKUMissingFromUOM-PurchaseOrdered-DOES_NOT_EXIST-MISSING_SKU",                    
+            "DiscrepancyType": "SKUMissingFromUOM",
+            "StageType": "PurchaseOrdered",
+            "RecordID": "DOES_NOT_EXIST",
+            "ItemID": "MISSING_SKU",
+            "ExpectedQuantity": 0,
+            "ObservedQuantity": 1,
+            "PONumber": "DOES_NOT_EXIST"
+        }]
+    }
+}
